@@ -1,0 +1,312 @@
+/* style.css */
+
+body {
+
+    margin: 0;
+
+    background: #111;
+
+    color: white;
+
+    font-family: Arial;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+/* STARTSCREEN */
+
+#startScreen {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: #111;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+#title {
+
+    font-size: 55px;
+
+    color: #00ffcc;
+
+    text-shadow:
+        0 0 10px #00ffcc,
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc;
+}
+
+#menuCoins {
+
+    margin-top: 10px;
+
+    font-size: 28px;
+
+    color: gold;
+
+    text-shadow:
+        0 0 10px gold,
+        0 0 20px gold;
+}
+
+/* MODE BUTTONS */
+
+#modeButtons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.modeBtn {
+
+    padding: 14px 35px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #222;
+
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 10px #00ffcc,
+        0 0 20px #00ffcc;
+}
+
+.modeBtn.selected {
+
+    background: #00ffcc;
+}
+
+/* SHOP */
+
+#shopToggle {
+
+    margin-top: 20px;
+
+    padding: 14px 35px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #00ffcc;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#shop {
+
+    display: none;
+
+    margin-top: 15px;
+}
+
+.shopBtn {
+
+    display: block;
+
+    margin: 10px auto;
+
+    padding: 12px 25px;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #222;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+/* START BUTTON */
+
+#startBtn {
+
+    margin-top: 25px;
+
+    padding: 18px 50px;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #00ffcc;
+
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 10px #00ffcc,
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc;
+}
+
+/* GAME */
+
+#gameContent {
+
+    display: none;
+}
+
+#score,
+#timer,
+#highscore,
+#combo,
+#coins {
+
+    font-size: 24px;
+
+    margin-top: 10px;
+}
+
+#combo {
+
+    color: #00ffcc;
+}
+
+#coins {
+
+    color: gold;
+}
+
+/* ACHIEVEMENT */
+
+#achievement {
+
+    position: fixed;
+
+    top: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #222;
+
+    color: gold;
+
+    padding: 15px 30px;
+
+    border-radius: 20px;
+
+    display: none;
+
+    z-index: 9999;
+}
+
+/* GAME AREA */
+
+#gameArea {
+
+    position: relative;
+
+    width: 100vw;
+
+    height: calc(100vh - 320px);
+
+    overflow: hidden;
+}
+
+/* TARGETS */
+
+.target {
+
+    width: 80px;
+    height: 80px;
+
+    background: #ff0055;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 10px #ff0055,
+        0 0 20px #ff0055;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    color: white;
+
+    user-select: none;
+}
+
+/* RESTART */
+
+#restartBtn {
+
+    display: none;
+
+    position: fixed;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 15px 35px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #00ffcc;
+
+    color: white;
+
+    cursor: pointer;
+}

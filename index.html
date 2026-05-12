@@ -1,0 +1,190 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reaction Rush</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- STARTSCREEN -->
+
+    <div id="startScreen">
+
+        <h1 id="title">Reaction Rush</h1>
+
+        <div id="menuCoins">
+
+            Coins: 0
+
+        </div>
+
+        <!-- MODES -->
+
+        <div id="modeButtons">
+
+            <button class="modeBtn"
+                    data-mode="classic">
+
+                Classic
+
+            </button>
+
+            <button class="modeBtn"
+                    data-mode="speed">
+
+                Speed
+
+            </button>
+
+            <button class="modeBtn"
+                    data-mode="precision">
+
+                Precision
+
+            </button>
+
+            <button class="modeBtn"
+                    data-mode="chaos">
+
+                Chaos
+
+            </button>
+
+            <button class="modeBtn"
+                    data-mode="target">
+
+                Target
+
+            </button>
+
+            <button class="modeBtn"
+                    data-mode="memory">
+
+                Memory
+
+            </button>
+
+        </div>
+
+        <!-- SHOP -->
+
+        <button id="shopToggle">
+
+            Shop
+
+        </button>
+
+        <div id="shop">
+
+            <h2>Shop</h2>
+
+            <button class="shopBtn"
+                    data-color="#00aaff"
+                    data-price="50">
+
+                Blue Skin - 50
+
+            </button>
+
+            <button class="shopBtn"
+                    data-color="#ffff00"
+                    data-price="100">
+
+                Gold Skin - 100
+
+            </button>
+
+            <button class="shopBtn"
+                    data-color="#aa00ff"
+                    data-price="200">
+
+                Purple Skin - 200
+
+            </button>
+
+        </div>
+
+        <!-- START -->
+
+        <button id="startBtn">
+
+            Start
+
+        </button>
+
+    </div>
+
+    <!-- GAME -->
+
+    <div id="gameContent">
+
+        <h1>Reaction Rush</h1>
+
+        <div id="score">
+
+            Punkte: 0
+
+        </div>
+
+        <div id="timer">
+
+            Zeit: 30
+
+        </div>
+
+        <div id="highscore">
+
+            Highscore: 0
+
+        </div>
+
+        <div id="combo">
+
+            Combo: x1
+
+        </div>
+
+        <div id="coins">
+
+            Coins: 0
+
+        </div>
+
+        <div id="achievement">
+
+        </div>
+
+        <!-- GAME AREA -->
+
+        <div id="gameArea">
+
+            <div class="target"></div>
+            <div class="target"></div>
+            <div class="target"></div>
+
+        </div>
+
+        <!-- RESTART -->
+
+        <button id="restartBtn">
+
+            Zurück zum Menü
+
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
